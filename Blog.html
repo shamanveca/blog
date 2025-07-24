@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" type="text/css" href="Blog.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Подключение шрифта Roboto-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kenia&family=Megrim&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Подключение шрифта Lato-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kenia&family=Khula:wght@300;400;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Megrim&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Lao:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="blog">
+        <div class="sidebar">
+            <div class="sidebar_foto">
+                <div class="sidebar_foto1">
+                    <img class="sidebar_img" src="./Фото/Основная страница/sidebar-img.jpeg" alt="Рабочее пространство">
+                </div>
+                
+                <div class="sidebar_foto2">
+                    <img class="sidebar_avatar" src="./Фото/Основная страница/sidebar-avatar.png" alt="Аватар">
+                </div>
+            </div>
+
+            <div class="sidebar_dannie">
+                <h2 class="fio">Ролан Закиров</h2>
+                <h3 class="doljnost">Front-end разработчик</h3>
+            </div>
+
+            <ul class="seti_list">
+                <li class="seti_item">
+                    <a class="seti_link" href="#">
+                        <img class="seti_img" src="./Фото/Основная страница/instagram (1) 1.svg" alt="inst">
+                    </a>
+                </li>
+
+                <li class="seti_item">
+                    <a class="seti_link" href="#">
+                        <img class="seti_img" src="./Фото/Основная страница/vk 1.svg" alt="VK">
+                    </a>
+                </li>
+            </ul>
+
+            <hr class="liniya">
+
+            <p class="sidebar_text">
+                Front-end разработчик. Практик верстки
+                <br>
+                сайтов. Созданием сайтов занимаюсь с 2012
+                <br>
+                года. Работал в нескольких ИТ компаниях и
+                <br>
+                наработал более 10 000 часов в создании
+                <br>
+                сайтов различной сложности.
+            </p>
+
+            <hr class="liniya">
+
+            <ul class="sidebar_button_list">
+                <li class="sidebar_button_item">
+                    <button class="sidebar_button1">Мои работы</button>
+                </li>
+
+                <li class="sidebar_button_item">
+                    <button class="sidebar_button2">Написать мне</button>
+                </li>
+            </ul> 
+        </div>
+
+        <div class="pravo">
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a class="nav_link" href="#">ГЛАВНАЯ</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a class="nav_link" href="#">ОБО МНЕ</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="soderjimoe">
+                <div class="stories">
+                    <div class="stories_item1">
+                        <p class="stories_zag">
+                            Отдыхаю на
+                            <br>
+                            природе
+                        </p>
+
+                        <p class="stories_data">21.09.2020</p>
+                    </div>
+
+                    <div class="stories_item2">
+                        <p class="stories_zag">
+                            Заканчиваю
+                            <br>
+                            сложный проект
+                        </p>
+
+                        <p class="stories_data">15.09.2020</p>
+                    </div>
+
+                    <div class="stories_item3">
+                        <p class="stories_zag">
+                            Переехал в новую
+                            <br>
+                            квартиру
+                        </p>
+
+                        <p class="stories_data">11.09.2020</p>
+                    </div>
+
+                    <div class="stories_item4">
+                        <p class="stories_zag">
+                            Осень пришла!
+                        </p>
+
+                        <p class="stories_data4">28.08.2020</p>
+                    </div>
+                </div>
+
+                <div class="obr_svyaz">
+                    <form method="post" enctype="multipart/form-data">
+	                    <label class="input-file">
+                            <input type="text" id="text" name="text" placeholder="Напишите что-нибудь">
+	   	                    <label class="pric_foto">
+                                <input type="file" id="fileUpload" name="fileUpload">
+                                <div class="flflfl">
+                                    <img  class="otpr_foto" src="./Фото/Основная страница/photo 1.svg" alt="">
+                                </div>
+                                
+                            </label>
+                            
+                            <button type="submit" class="otpravit" name="otpravit">
+                                <img class="send_img" src="./Фото/Основная страница/send (1) 1.svg" alt="">
+                            </button>
+ 	                    </label>
+                    </form>
+                    
+                </div>
+
+                <div class="post">
+                
+                     <p class="post_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis
+                        <br>
+                        urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt
+                        <br>
+                        arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat
+                        <br>
+                        massa. Egestas ornare vel volutpat.
+                    </p>
+                    
+                    <p class="post_data">21.06.2020</p>
+
+                </div>
+
+                <div class="post_s_video">
+                    <div class="post_s_video_soderjimoe">
+                        <div class="video_i_play">
+                            <img class="post_s_video_img" src="./Фото/Основная страница/foto-video.png" alt="nout">
+                            
+                            <button class="button_play">
+                                <img src="./Фото/Основная страница/play 1.png" alt="play">
+                            </button>
+                            
+                        </div>
+
+                        <p class="post_zag">Купил новый ноутбук за 150 000 руб</p>
+
+                        <div class="post_flex1">
+                            <div class="post_flex2">
+                                <div class="post_dataa">
+                                    <p class="post_data">21.06.2020</p>
+                                </div>
+
+                                <div class="post_tochka">
+                                
+                                </div>
+
+                                <div class="post_teg">
+                                    <p class="post_data">продвижение видео</p>
+                                </div>
+                            </div>
+
+                            
+                            <a class="post_link" href="#">оставить комментарий</a>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post_img">
+                    <img class="img_post" src="./Фото/Основная страница/foto-post.jpeg" alt="foto">
+
+                    <div class="post_img_soderjimoe">
+                        <p class="post_zag">Как я сходил на FrontEnd Conf 2021</p>
+
+                        <p class="post_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis
+                            <br>
+                            urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt
+                            <br>
+                            arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat
+                            <br>
+                            massa. Egestas ornare vel volutpat.
+                        </p>
+
+                        <div class="post_flex1">
+                            <div class="post_flex2">
+                                <div class="post_dataa">
+                                    <p class="post_data">21.06.2020</p>
+                                </div>
+
+                                <div class="post_tochka">
+
+                                </div>
+
+                                <div class="post_teg">
+                                    <p class="post_data">создание сайтов</p>
+                                </div>
+                            </div>
+
+                            <a class="post_link" href="#">читать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stranitsi">
+                    <ul class="stranitsi_button_list">
+                        <li class="stranitsi_button_item">
+                            <button class="stranitsi_button">&lt;</button>
+                        </li>
+
+                        <li class="stranitsi_button_item">
+                            <button class="stranitsi_button">1</button>
+                        </li>
+
+                        <li class="stranitsi_button_item">
+                            <button class="stranitsi_button">2</button>
+                        </li>
+
+                        <li class="stranitsi_button_item">
+                            <button class="stranitsi_button">3</button>
+                        </li>
+
+                        <li class="stranitsi_button_item">
+                            <button class="stranitsi_button">&gt;</button>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

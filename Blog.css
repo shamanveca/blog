@@ -1,0 +1,477 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box; /* Делает ограничения размеров элементов по их границе */
+    scroll-behavior: smooth;
+    overflow-anchor: none; /* Запоминает положение на странице и после обновления автоматически прокручивает к тому же элементу */
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog{
+    display: flex;
+}
+
+.sidebar{
+    width: 300px;
+    height: 2440px;
+    background-color: rgb(32, 32, 32);
+    box-shadow: 5px 0px 15px 0px rgba(5, 5, 5, 0.1);
+    
+}
+
+.sidebar_foto{
+    position: relative;
+}
+
+.sidebar_foto1{
+    z-index: 1;
+}
+
+.sidebar_foto2{
+    position: absolute;
+    z-index: 2;
+    top: 110px;
+    left: 80px;
+}
+
+.fio{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.doljnost{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 300;
+    color: rgb(222, 222, 222);
+}
+
+.sidebar_dannie{
+    text-align: center;
+    margin-top: 65px;
+}
+
+.seti_item{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.seti_list{
+    margin-top: 20px;
+    margin-left: 118px;
+}
+
+.seti_img{
+    width: 25px;
+    height: 25px;
+}
+
+.liniya{
+    width: 260px;
+    border: 1px solid white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.sidebar_text{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.sidebar_button_list{
+    margin-left: 25px;
+}
+
+.sidebar_button_item{
+    display: inline-block;
+}
+
+.sidebar_button1, .sidebar_button2{
+    width: 120px;
+    height: 40px;
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.sidebar_button1{
+    background-color: rgb(237, 48, 36);
+    box-shadow: 0px 7px 17px -10px rgba(242, 63, 63, 0.2);
+    margin-right: 15px;
+}
+
+.sidebar_button2{
+    background-color: rgb(49, 55, 201);
+    box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
+}
+
+.sidebar_button1, .sidebar_button2:hover{
+    cursor: pointer;
+}
+
+.sidebar_button2:active{
+    border: 1px solid rgb(24, 24, 24);
+}
+
+.sidebar_button1:active{
+    border: 1px solid rgb(24, 24, 24);
+}
+
+
+.pravo{
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+}
+
+.nav{
+    background-color: rgb(13, 13, 13);
+    box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.25);
+    height: 50px;
+}
+
+.nav_list{
+    padding-top: 15px;
+    margin-left: 17px;
+}
+
+.nav_item{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.nav_link{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.soderjimoe{
+    margin-left: 200px;
+}
+
+.stories{
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.stories_item1{
+    background-image: url(./Фото/Основная\ страница/foto1.png);
+}
+
+.stories_item2{
+    background-image: url(./Фото/Основная\ страница/foto2.png);
+}
+
+.stories_item3{
+    background-image: url(./Фото/Основная\ страница/foto3.png);
+}
+
+.stories_item4{
+    background-image: url(./Фото/Основная\ страница/foto4.png);
+}
+
+.stories_item1, .stories_item3, .stories_item4{
+    width: 200px;
+    height: 300px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: 200px 300px;
+}
+
+.stories_item2{
+    width: 200px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    background-size: 240px 350px;
+    background-position: -20px -17px;
+}
+
+.stories_zag, .stories_data, .stories_data4{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.stories_zag{
+    padding-top: 20px;
+    margin-left: 17px;
+}
+
+.stories_data{
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 200px;
+}
+
+.stories_data4{
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 218px;
+}
+
+.obr_svyaz{
+    width: 880px;
+    height: 75px;
+    background-color: rgb(18, 18, 18);
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+}
+
+#text{
+    height: 45px;
+    width: 720px;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgb(210, 210, 210);
+    background-color: rgb(18, 18, 18);
+    border: none;
+}
+
+
+/* сделал как смог кнопку прикрепления фото. Долго пытался 
+    разобраться и искал каких-то простых способов. Если есть более 
+    простой вариант подскажите пожалуйста) */
+.pric_foto{
+    display: flex;
+    align-items: center;
+}
+
+.input-file{
+    display: flex;
+    align-items: center;
+}
+
+.flflfl{
+    width: 44px;
+    height: 44px;
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 12px;
+    cursor: pointer;
+    margin-left: 15px;
+    border: none;
+}
+
+.otpr_foto{
+    margin-top: 11px;
+}
+
+#fileUpload{
+    display: none;
+}
+
+.otpravit{
+    width: 44px;
+    height: 44px;
+    border-radius: 25px;
+    background-color: rgb(49, 55, 201);
+    margin-top: 12px;
+    margin-left: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.otpravit:hover{
+    border: 3px solid rgb(235, 235, 235);
+}
+
+.otpravit:active{
+    border: none;
+}
+
+.flflfl:hover{
+    border: 3px solid rgb(49, 55, 201);
+}
+
+.flflfl:active{
+    border: none;
+}
+
+.send_img{
+    margin-top: 4px;
+    margin-left: 3px;
+}
+
+.post{
+    width: 813px;
+    height: 161px;
+    padding: 35px;
+}
+
+.post, .post_s_video, .post_img{
+    border-radius: 5px;
+    margin-top: 40px;
+    background-color: rgb(32, 32, 32);
+    box-sizing: 0px 15px 25px 0px rgba(0, 0, 0, 0.35);
+}
+
+.post_text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    color: rgb(210, 210, 210);
+}
+
+.post_data{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgb(130, 130, 130);
+    margin-top: 50px;
+}
+
+.post_s_video{
+    height: 570px;
+    width: 813px;
+    padding: 35px;
+}
+
+.video_i_play{
+    position: relative;
+}
+
+.post_s_video_img{
+    z-index: 1;
+    width: 810px;
+    height: 440px;
+}
+
+.button_play{
+    position: absolute;
+    z-index: 2;
+    left: 360px;
+    top: 200px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.post_zag{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.post_flex1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -15px;
+}
+
+.post_flex2{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.post_tochka{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: rgb(196, 196, 196);
+    margin-top: 57px;
+}
+
+.post_dataa, .post_tochka, .post_teg{
+    margin-right: 30px;
+}
+
+.post_link{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+    color: rgb(16, 126, 255);
+    margin-top: 50px;
+}
+
+.post_img{
+    height: 650px;
+    width: 880px;
+}
+
+.post_img_soderjimoe{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.img_post{
+    width: 880px;
+    height: 400px;
+}
+
+.stranitsi_button_item{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.stranitsi_button{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: rgb(13, 13, 13);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.stranitsi_button:hover{
+    cursor: pointer;
+    background-color: rgb(16, 75, 227);
+    box-shadow: 0px 0px 10px 0px rgba(58, 108, 234, 0.15);
+}
+
+.stranitsi{
+    margin-left: 310px;
+    margin-top: 160px;
+}
